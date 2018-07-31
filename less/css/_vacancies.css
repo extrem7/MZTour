@@ -1,0 +1,12 @@
+.page-template-about .blue-tab .tab-content {
+  font-weight: 400;
+}
+.page-template-about .blue-tab .tab-content b {
+  font-weight: 700;
+}
+.page-template-about .blue-tab .title {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}

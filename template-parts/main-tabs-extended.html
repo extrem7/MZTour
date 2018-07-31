@@ -1,0 +1,1427 @@
+<div class="forms forms-extended">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#avia" data-title="Болгария"
+               data-subtitle="удивительная страна, отдыхнуть в которой должен каждый!">
+                <img src="img/tabs-icon-avia.png" class="original" alt="">
+                <img src="img/tabs-icon-avia-active.png" class="active" alt="">Авиабилеты</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tour" data-title="Созополь"
+               data-subtitle="Это один из самых популярных и красивых курортов Болгарии">
+                <img src="img/tabs-icon-tour.png" class="original" alt="">
+                <img src="img/tabs-icon-tour-active.png" class="active" alt="">
+                Туры</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#hotel" data-title=" "
+               data-subtitle="Sunny Beach, Солнечный берег, Болгария">
+                <img src="img/tabs-icon-hotel.png" class="original" alt="">
+                <img src="img/tabs-icon-hotel-active.png" class="active" alt="">
+                Отели</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#visa" data-title="Нужна виза?"
+               data-subtitle="Мы готовы взять на себя все ваши хлопоты<br>по сбору документов для получения визы<br>и предоставлению их в визовый центр">
+                <img src="img/tabs-icon-visa.png" class="original" alt="">
+                <img src="img/tabs-icon-visa-active.png" class="active" alt="">
+                Визы</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#transfer" data-title="Нужен трансфер?"
+               data-subtitle="Профессиональные водители вовремя и безопасно<br>доставят Вас до Отеля, Виллы, Аэропорта.<br>Вы можете забронировать трансфер в Отель,<br>к  Вилле или просто в город.">
+                <img src="img/tabs-icon-transfer.png" class="original" alt="">
+                <img src="img/tabs-icon-transfer-active.png" class="active" alt="">
+                Трансфер</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#car" data-title="Машины в аренду"
+               data-subtitle="Предлагаем вам лучшие цены<br>и бескомпромиссное обслуживание">
+                <img src="img/tabs-icon-car.png" class="original" alt="">
+                <img src="img/tabs-icon-car-active.png" class="active" alt="">
+                Аренда авто</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#security"
+               data-title="Хоть страхуй! Хоть не страхуй!<br>Все равно.... мы молодцы!!!"
+               data-subtitle="Предлагаем вам лучшие цены<br>и бескомпромиссное обслуживание">
+                <img src="img/tabs-icon-security.png" class="original" alt="">
+                <img src="img/tabs-icon-security-active.png" class="active" alt="">
+                Страховка</a>
+        </li>
+    </ul>
+    <div class="tab-content custom-form-controls" id="myTabContent">
+        <div class="tab-pane fade" id="avia">
+            <div class="row-inputs top-inputs">
+                <label class="radio-block">
+                    <input type="radio" name="direction" checked>
+                    <span class="checkmark"></span>
+                    В одну сторону
+                </label>
+                <label class="radio-block">
+                    <input type="radio" name="direction">
+                    <span class="checkmark"></span>
+                    Туда-обратно
+                </label>
+                <label class="checkbox-block">
+                    <input type="checkbox" name="without">
+                    <span class="checkmark"></span>
+                    Рейсы без пересадок
+                </label>
+                <label class="checkbox-block">
+                    <input type="checkbox" name="pet">
+                    <span class="checkmark"></span>
+                    Место для питомца
+                </label>
+            </div>
+            <div class="row-inputs align-items-end">
+                <label class="select-block input-block">
+                    Куда
+                    <select>
+                        <option selected>Москва</option>
+                        <option>София</option>
+                        <option>Одеса</option>
+                        <option>Киев</option>
+                    </select>
+                </label>
+                <button class="refresh"></button>
+                <label class="select-block input-block">
+                    Откуда
+                    <select>
+                        <option selected>София</option>
+                        <option>Москва</option>
+                        <option>Киев</option>
+                        <option>Одеса</option>
+                    </select>
+                </label>
+                <label class="date-block input-block">
+                    Туда
+                    <input type="date" value="2018-01-01">
+                </label>
+                <label class="date-block input-block">
+                    Обратно
+                    <input type="date" value="2018-01-01">
+                </label>
+                <label class="number-block input-block">
+                    Пассажиры
+                    <span class="d-flex">
+                                <span class="adult">
+                            <input type="number" value="1" class="input-left">
+                                    </span>
+                                <span class="child">
+                            <input type="number" value="1">
+                                    </span>
+                                <span class="little-child">
+                            <input type="number" placeholder="0" class="input-right">
+                                    </span>
+                                </span>
+                </label>
+                <button class="submit">НАЙТИ</button>
+            </div>
+        </div>
+        <div class="tab-pane fade " id="tour">
+            <div class="plain">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-xl-between">
+                    <div>
+                        <div class="row-inputs top-row">
+                            <label class="select-block input-block">
+                                Город вылета
+                                <select>
+                                    <option selected>Москва</option>
+                                    <option>София</option>
+                                    <option>Одеса</option>
+                                    <option>Киев</option>
+                                </select>
+                            </label>
+                            <label class="select-block input-block">
+                                Страна
+                                <select>
+                                    <option selected>Болгария</option>
+                                    <option>Москва</option>
+                                    <option>Киев</option>
+                                    <option>Одеса</option>
+                                </select>
+                            </label>
+                            <label class="select-block input-block">
+                                Город, курорт
+                                <select>
+                                    <option selected>Любой</option>
+                                    <option>София</option>
+                                    <option>Одеса</option>
+                                    <option>Киев</option>
+                                </select>
+                            </label>
+                            <label class="date-block input-block">
+                                Период вылета
+                                <input type="text" class="date-range" placeholder="01.01-01.01">
+                            </label>
+                            <label class="duration-block input-block">
+                                Длительность
+                                <input type="number" placeholder="7 - 14 ночей">
+                            </label>
+                            <label class="number-block input-block">
+                                Пассажиры
+                                <span class="d-flex">
+                                <span class="adult">
+                            <input type="number" value="1" class="input-left">
+                                    </span>
+                                <span class="child ">
+                            <input type="number" class="input-right" value="1">
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="row-inputs">
+                            <label class="input-block">
+                                Цена (руб)
+                                <input type="text" value="от 17 000 до 3 000 000 руб." disabled>
+                            </label>
+                            <label class="select-block tour-type input-block">
+                                Тип тура
+                                <select>
+                                    <option selected>Любой тур</option>
+                                    <option>Любой тур</option>
+                                    <option>Любой тур</option>
+                                    <option>Любой тур</option>
+                                </select>
+                            </label>
+                            <label class="category-block select-block input-block">
+                                Категория
+                                <select>
+                                    <option selected>1 - 5 звёзд</option>
+                                    <option>1 - 4 звёзд</option>
+                                    <option>1 - 3 звёзд</option>
+                                    <option>1 - 2 звёзд</option>
+                                </select>
+                            </label>
+                            <label class="select-block input-block">
+                                Питание
+                                <select>
+                                    <option selected>Любое питание</option>
+                                    <option>Любое питание</option>
+                                    <option>Любое питание</option>
+                                    <option>Любое питание</option>
+                                </select>
+                            </label>
+                            <label class="animal-block input-block">
+                                Животные
+                                <input type="number" value="1" class="">
+                            </label>
+                        </div>
+                    </div>
+                    <button class="submit submit-big">НАЙТИ</button>
+                </div>
+                <div class="bottom-row d-flex justify-content-between align-items-center">
+                    <label class="checkbox-block">
+                        <input type="checkbox" name="include-hotels" checked>
+                        <span class="checkmark"></span>
+                        Предложить отели
+                    </label>
+                    <a href="" class="additional-search">Расширенный поиск</a>
+                </div>
+            </div>
+            <div class="extended">
+                <div class="row-inputs top-row">
+                    <label class="select-block input-block">
+                        Город вылета
+                        <select>
+                            <option selected>Москва</option>
+                            <option>София</option>
+                            <option>Одеса</option>
+                            <option>Киев</option>
+                        </select>
+                    </label>
+                    <label class="select-block input-block">
+                        Страна
+                        <select>
+                            <option selected>Болгария</option>
+                            <option>Москва</option>
+                            <option>Киев</option>
+                            <option>Одеса</option>
+                        </select>
+                    </label>
+                    <label class="date-block input-block">
+                        Период вылета
+                        <input type="text" class="date-range" placeholder="01.01-01.01">
+                    </label>
+                    <label class="duration-block input-block">
+                        Длительность
+                        <input type="number" placeholder="7 - 14 ночей">
+                    </label>
+                    <label class="number-block human-count input-block">
+                        <span class="d-flex">
+                                <span class="adult">
+                                    Взрослых
+                            <input type="number" value="1" class="input-left">
+                                    </span>
+                                <span class="child ">
+                                    Детей
+                            <input type="number" class="input-right" value="1">
+                                    </span>
+                                </span>
+                    </label>
+                    <label class="input-block childrens-age">
+                        Возраст детей
+                        <span class="d-flex">
+                            <input type="number" value="8">
+                            <input type="number" value="11">
+                            <input type="number" value="0">
+                        </span>
+                    </label>
+                    <label class="animal-block input-block">
+                        Животные
+                        <input type="number" value="1" class="">
+                    </label>
+                </div>
+                <div class="extended-row">
+                    <div class="param-list">
+                        <p>Город</p>
+                        <div class="list">
+                            <div class="list-overflow">
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой город
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Дюны
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой город
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Дюны
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой город
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Дюны
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой город
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Дюны
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой город
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Дюны
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой город
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Дюны
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="param-list">
+                        <p>Курорт</p>
+                        <div class="list">
+                            <div class="list-overflow">
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="param-list tour-type-list">
+                        <p>Тип тура</p>
+                        <div class="list">
+                            <div class="list-overflow">
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Тип тура
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Тип тура
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Тип тура
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Тип тура
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Тип тура
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Тип тура
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="param-list">
+                        <p>Категория</p>
+                        <div class="list">
+                            <div class="list-overflow">
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Любая
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    5*
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    5*
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    5*
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    5*
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    5*
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    5*
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    5*
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    5*
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="param-list">
+                        <p>Питание</p>
+                        <div class="list">
+                            <div class="list-overflow">
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Любое
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    UAI
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    UAI
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    UAI
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    UAI
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    UAI
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    UAI
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    UAI
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="price-range">
+                            <p>Цена (руб)</p>
+                            <div class="price-block">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <input type="text" class="slider-from" disabled>
+                                    <span class="to">до</span>
+                                    <input type="text" class="slider-to" disabled>
+                                </div>
+                                <div  class="slider-range"></div>
+                            </div>
+                        </div>
+                        <label class="checkbox-block">
+                            <input type="checkbox" name="include-hotels" checked>
+                            <span class="checkmark"></span>
+                            Предложить отели
+                        </label>
+                        <button class="submit submit-big">НАЙТИ</button>
+                        <a href="" class="additional-search">Скрыть расширенный поиск</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade extended-tab show active" id="hotel">
+            <div class="plain">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-xl-between">
+                    <div>
+                        <div class="row-inputs">
+                            <label class="select-block input-block">
+                                Страна
+                                <select>
+                                    <option selected>Болгария</option>
+                                    <option>София</option>
+                                    <option>Одеса</option>
+                                    <option>Киев</option>
+                                </select>
+                            </label>
+                            <label class="select-block input-block">
+                                Город
+                                <select>
+                                    <option selected>София</option>
+                                    <option>Москва</option>
+                                    <option>Киев</option>
+                                    <option>Одеса</option>
+                                </select>
+                            </label>
+                            <label class="select-block input-block">
+                                Курорт
+                                <select>
+                                    <option selected>Любой</option>
+                                    <option>София</option>
+                                    <option>Одеса</option>
+                                    <option>Киев</option>
+                                </select>
+                            </label>
+                            <label class="category-block select-block input-block">
+                                Категория
+                                <select>
+                                    <option selected>1 - 5 звёзд</option>
+                                    <option>1 - 4 звёзд</option>
+                                    <option>1 - 3 звёзд</option>
+                                    <option>1 - 2 звёзд</option>
+                                </select>
+                            </label>
+                            <label class="date-block input-block">
+                                Период вылета
+                                <input type="text" class="date-range" placeholder="01.01-01.01">
+                            </label>
+                            <label class="number-block input-block">
+                                Пассажиры
+                                <span class="d-flex">
+                                <span class="adult">
+                            <input type="number" value="1" class="input-left">
+                                    </span>
+                                <span class="child ">
+                            <input type="number" class="input-right" placeholder="0" value="">
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="row-inputs">
+                            <label class="input-block">
+                                Цена (руб)
+                                <input type="text" value="от 17 000 до 3 000 000 руб." disabled>
+                            </label>
+                            <label class="select-block tour-type input-block">
+                                Тип отеля
+                                <select>
+                                    <option selected>Любой тип отеля</option>
+                                    <option>Любой тип отеля</option>
+                                    <option>Любой тип отеля</option>
+                                    <option>Любой тип отеля</option>
+                                </select>
+                            </label>
+                            <label class="select-block tour-type input-block">
+                                Тип отдыха
+                                <select>
+                                    <option selected>Любой тип отдыха</option>
+                                    <option>Любой тип отдыха</option>
+                                    <option>Любой тип отдыха</option>
+                                    <option>Любой тип отдыха</option>
+                                </select>
+                            </label>
+                            <label class="select-block input-block">
+                                Питание
+                                <select>
+                                    <option selected>Любое питание</option>
+                                    <option>Любое питание</option>
+                                    <option>Любое питание</option>
+                                    <option>Любое питание</option>
+                                </select>
+                            </label>
+                            <label class="animal-block input-block">
+                                Животные
+                                <input type="number" value="1" class="">
+                            </label>
+                        </div>
+                    </div>
+                    <button class="submit submit-big">НАЙТИ</button>
+                </div>
+                <div class="bottom-row d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <label class="checkbox-block">
+                            <input type="checkbox" name="include-hotels" checked>
+                            <span class="checkmark"></span>
+                            Авиабилеты
+                        </label>
+                        <label class="checkbox-block">
+                            <input type="checkbox" name="include-hotels" checked>
+                            <span class="checkmark"></span>
+                            Путешествие по работе
+                        </label>
+                        <label class="checkbox-block">
+                            <input type="checkbox" name="include-hotels" checked>
+                            <span class="checkmark"></span>
+                            Трансфер
+                        </label>
+                        <label class="checkbox-block">
+                            <input type="checkbox" name="include-hotels" checked>
+                            <span class="checkmark"></span>
+                            Виза
+                        </label>
+                    </div>
+                    <a href="" class="additional-search">Расширенный поиск</a>
+                </div>
+            </div>
+            <div class="extended">
+                <div class="row-inputs top-row">
+                    <label class="select-block input-block">
+                        Страна
+                        <select>
+                            <option selected>Болгария</option>
+                            <option>Болгария</option>
+                            <option>Болгария</option>
+                            <option>Болгария</option>
+                        </select>
+                    </label>
+                    <label class="date-block input-block">
+                        Заезд
+                        <input type="text" class="date-range" placeholder="01.01-01.01">
+                    </label>
+                    <label class="date-block input-block">
+                        Выезд
+                        <input type="text" class="date-range" placeholder="01.01-01.01">
+                    </label>
+                    <label class="select-block input-block">
+                        Места
+                        <select>
+                            <option selected>Двухместный</option>
+                            <option>Двухместный</option>
+                            <option>Двухместный</option>
+                            <option>Двухместный</option>
+                        </select>
+                    </label>
+                    <label class="number-block human-count input-block">
+                        <span class="d-flex">
+                                <span class="adult">
+                                    Взрослых
+                            <input type="number" value="1" class="input-left">
+                                    </span>
+                                <span class="child ">
+                                    Детей
+                            <input type="number" class="input-right" value="1">
+                                    </span>
+                                </span>
+                    </label>
+                    <label class="input-block childrens-age">
+                        Возраст детей
+                        <span class="d-flex">
+                            <input type="number" value="8">
+                            <input type="number" value="11">
+                            <input type="number" value="0">
+                        </span>
+                    </label>
+                    <label class="animal-block input-block">
+                        Животные
+                        <input type="number" value="1" class="">
+                    </label>
+                </div>
+                <div class="extended-row">
+                    <div class="param-list">
+                        <p>Город</p>
+                        <div class="list">
+                            <div class="list-overflow">
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой город
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Дюны
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой город
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Дюны
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой город
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Дюны
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой город
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Дюны
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой город
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Дюны
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой город
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Дюны
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="param-list">
+                        <p>Курорт</p>
+                        <div class="list">
+                            <div class="list-overflow">
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    Любой курорт
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Албена
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="param-list tour-type-list">
+                        <p>Тип тура</p>
+                        <div class="list">
+                            <div class="list-overflow">
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Тип тура
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Тип тура
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Тип тура
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Тип тура
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Тип тура
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Тип тура
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="param-list">
+                        <p>Категория</p>
+                        <div class="list">
+                            <div class="list-overflow">
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Любая
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    5*
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    5*
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    5*
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    5*
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    5*
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    5*
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    5*
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    5*
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="param-list">
+                        <p>Питание</p>
+                        <div class="list">
+                            <div class="list-overflow">
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without" checked>
+                                    <span class="checkmark"></span>
+                                    Любое
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    UAI
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    UAI
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    UAI
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    UAI
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    UAI
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    UAI
+                                </label>
+                                <label class="checkbox-block">
+                                    <input type="checkbox" name="without">
+                                    <span class="checkmark"></span>
+                                    UAI
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <label class="select-block input-block">
+                            Тип отдыха
+                            <select>
+                                <option selected>Любой тип отдыха</option>
+                                <option>Любой тип отдыха</option>
+                                <option>Любой тип отдыха</option>
+                                <option>Любой тип отдыха</option>
+                            </select>
+                        </label>
+                        <div class="price-range">
+                            <p>Цена (руб)</p>
+                            <div class="price-block">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <input type="text" class="slider-from" disabled>
+                                    <span class="to">до</span>
+                                    <input type="text" class="slider-to" disabled>
+                                </div>
+                                <div  class="slider-range"></div>
+                            </div>
+                        </div>
+                        <button class="submit submit-big">НАЙТИ</button>
+                        <a href="" class="additional-search">Скрыть расширенный поиск</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="visa">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-xl-between">
+                <div>
+                    <div class="top-row row-inputs">
+                        <label class="select-block input-block">
+                            В какую страну
+                            <select>
+                                <option selected>Болгария</option>
+                                <option>София</option>
+                                <option>Одеса</option>
+                                <option>Киев</option>
+                            </select>
+                        </label>
+                        <label class="select-block input-block">
+                            Число запрашиваемых въездов
+                            <select>
+                                <option selected>Однократная</option>
+                                <option>Однократная</option>
+                                <option>Однократная</option>
+                                <option>Однократная</option>
+                            </select>
+                        </label>
+                        <label class="date-block input-block">
+                            Планируемая дата въезда
+                            <input type="date" value="2018-01-01">
+                        </label>
+                        <label class="number-block input-block">
+                            Взрослые (18+)
+                            <span class="adult"><input type="number" value="1" class=""></span>
+                        </label>
+                        <label class="number-block input-block">
+                            Младенец (с 0 до 6)
+                            <span class="little-child "><input type="number" placeholder="0"></span>
+                        </label>
+                    </div>
+                    <div class="row-inputs">
+                        <label class="select-block input-block">
+                            Тип визы
+                            <select>
+                                <option selected>Туристическая виза</option>
+                                <option>Туристическая виза</option>
+                                <option>Туристическая виза</option>
+                                <option>Туристическая виза</option>
+                            </select>
+                        </label>
+                        <label class="select-block input-block">
+                            Гражданство
+                            <select>
+                                <option selected>РОССИЯ</option>
+                                <option>РОССИЯ</option>
+                                <option>РОССИЯ</option>
+                                <option>РОССИЯ</option>
+                            </select>
+                        </label>
+                        <label class="date-block input-block">
+                            Планируемая дата выезда
+                            <input type="date" value="2018-01-01">
+                        </label>
+                        <label class="number-block input-block">
+                            Дети (с 6 до 18)
+                            <span class="child"><input type="number" value="1" class=""></span>
+                        </label>
+                        <label class="number-block input-block">
+                            Инвалид
+                            <span class="invalid-human "><input type="number" placeholder="0"></span>
+                        </label>
+                    </div>
+                </div>
+                <button class="submit submit-big">НАЙТИ</button>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="transfer">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-xl-between">
+                <div>
+                    <div class="top-row row-inputs">
+                        <label class="select-block input-block">
+                            От места назначения
+                            <select>
+                                <option selected>Airport Burgas, Болгари</option>
+                                <option>Airport Burgas, Болгари</option>
+                                <option>Airport Burgas, Болгари</option>
+                                <option>Airport Burgas, Болгари</option>
+                            </select>
+                        </label>
+                        <label class="select-block input-block">
+                            До конечного пункта
+                            <select>
+                                <option selected>Албена</option>
+                                <option>Албена</option>
+                                <option>Албена</option>
+                                <option>Албена</option>
+                            </select>
+                        </label>
+                        <label class="number-block input-block">
+                            Взрослые (12+)
+                            <span class="adult"><input type="number" value="1" class=""></span>
+                        </label>
+                        <label class="number-block input-block">
+                            Дети (3-11)
+                            <span class="child "><input type="number" value="1"></span>
+                        </label>
+                        <label class="number-block input-block">
+                            Младенец (0-2)
+                            <span class="little-child "><input type="number" placeholder="0"></span>
+                        </label>
+                        <label class="number-block input-block">
+                            Пассажиров
+                            <span><input type="number" value="2"></span>
+                        </label>
+                    </div>
+                    <div class="row-inputs">
+                        <div class="input-block">
+                            Пожалуйста, выберите тип бронирование
+                            <div class="d-flex">
+                                <label class="radio-block">
+                                    <input type="radio" name="bron-type" checked>
+                                    <span class="checkmark"></span>
+                                    Односторонний
+                                </label>
+                                <label class="radio-block">
+                                    <input type="radio" name="bron-type">
+                                    <span class="checkmark"></span>
+                                    Возвращение
+                                </label>
+                            </div>
+                        </div>
+                        <label class="date-block input-block">
+                            Дата Прибытия
+                            <input type="date" value="2018-01-01">
+                        </label>
+                        <label class="date-block input-block">
+                            Дата Вылета
+                            <input type="date" value="2018-01-01">
+                        </label>
+                        <label class="select-block input-block">
+                            Выберите транспорт
+                            <select>
+                                <option selected>Стандарт</option>
+                                <option>Стандарт</option>
+                                <option>Стандарт</option>
+                                <option>Стандарт</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <button class="submit submit-big">НАЙТИ</button>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="car">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-xl-between">
+                <div>
+                    <div class="top-row row-inputs">
+                        <label class="select-block input-block">
+                            Страна
+                            <select>
+                                <option selected>Болгария</option>
+                                <option>Болгария</option>
+                                <option>Болгария</option>
+                            </select>
+                        </label>
+                        <label class="select-block input-block">
+                            Город
+                            <select>
+                                <option selected>Бургас</option>
+                                <option>Бургас</option>
+                                <option>Бургас</option>
+                                <option>Бургас</option>
+                            </select>
+                        </label>
+                        <label class="select-block input-block">
+                            Место получения
+                            <select>
+                                <option selected>Бургас центр</option>
+                                <option>Бургас центр</option>
+                                <option>Бургас центр</option>
+                                <option>Бургас центр</option>
+                            </select>
+                        </label>
+                        <label class="select-block input-block">
+                            Категория
+                            <select>
+                                <option selected>Бюджетный класс</option>
+                                <option>Бюджетный класс</option>
+                                <option>Бюджетный класс</option>
+                                <option>Бюджетный класс</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="row-inputs">
+                        <div class="d-flex">
+                            <label class="date-block input-block">
+                                Начало aренды
+                                <input type="date" value="2018-01-01">
+                            </label>
+                            <label class="time-block input-block">
+                                Время
+                                <input type="time" value="10:30">
+                            </label>
+                        </div>
+                        <div class="d-flex">
+                            <label class="date-block input-block">
+                                Возврат
+                                <input type="date" value="2018-01-01">
+                            </label>
+                            <label class="time-block input-block">
+                                Время
+                                <input type="time" value="10:30">
+                            </label>
+                        </div>
+                        <label class="select-block input-block">
+                            Место возврата
+                            <select>
+                                <option selected>Бургас центр</option>
+                                <option>Бургас центр</option>
+                                <option>Бургас центр</option>
+                                <option>Бургас центр</option>
+                            </select>
+                        </label>
+                        <label class="select-block select-small input-block">
+                            Места
+                            <select>
+                                <option selected>4+1</option>
+                                <option>4+1</option>
+                                <option>4+1</option>
+                                <option>4+1</option>
+                            </select>
+                        </label>
+                        <label class="select-block select-small input-block">
+                            Коробка скорос.
+                            <select>
+                                <option selected>АКПП</option>
+                                <option>АКПП</option>
+                                <option>АКПП</option>
+                                <option>АКПП</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <button class="submit submit-big">НАЙТИ</button>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="security">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-xl-between">
+                <div>
+                    <div class="top-row row-inputs">
+                        <label class="select-block input-block">
+                            Страна
+                            <select>
+                                <option selected>Болгария</option>
+                                <option>София</option>
+                                <option>Одеса</option>
+                                <option>Киев</option>
+                            </select>
+                        </label>
+                        <label class="date-block input-block">
+                            Дата начала
+                            <input type="date" value="2018-01-01">
+                        </label>
+                        <label class="date-block input-block">
+                            Дата окончания
+                            <input type="date" value="2018-01-01">
+                        </label>
+                        <label class="select-block select-big input-block">
+                            Тип страховки
+                            <select>
+                                <option selected>Туристическая</option>
+                                <option>Туристическая</option>
+                                <option>Туристическая</option>
+                                <option>Туристическая</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="row-inputs">
+                        <label class="select-block input-block">
+                            Тип полиса
+                            <select>
+                                <option selected>Разовый</option>
+                                <option>Разовый</option>
+                            </select>
+                        </label>
+                        <label class="select-block input-block">
+                            Количество туристов
+                            <select>
+                                <option selected>3 туриста</option>
+                                <option>2 туриста</option>
+                            </select>
+                        </label>
+                        <label class="input-block">
+                            Возраст туристов
+                            <input type="number" placeholder="25 лет">
+                        </label>
+                        <label class="input-block">
+                            <input type="number" placeholder="25 лет">
+                        </label>
+                        <label class="input-block">
+                            <input type="number" placeholder="25 лет">
+                        </label>
+                    </div>
+                </div>
+                <button class="submit submit-big">Продолжить</button>
+            </div>
+        </div>
+    </div>
+</div>

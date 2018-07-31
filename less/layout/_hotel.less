@@ -1,0 +1,231 @@
+.hotel-item {
+  margin-bottom: 12px;
+  .border-radius(10px);
+  padding: 0 20px 0 8px;
+  border: 1px solid #c1c1c1;
+  .background-image(linear-gradient(to top, #ebebeb 0%, #f9f9f9 100%));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .hotel-slider {
+    // width: 210px;
+    margin-right: 20px;
+    .main-photo {
+      .size(279px, 208px);
+      margin-bottom: 7px;
+      pointer-events: none;
+    }
+    .photos-row {
+      width: 230px;
+      margin: 0 auto;
+      position: relative;
+      .slick-arrow {
+        color: #0089bc;
+        position: absolute;
+        top: 0px;
+        font-size: 48px;
+        line-height: 48px;
+        &.slick-disabled {
+          color: #999999;
+        }
+        &.fa-caret-left {
+          left: -25px;
+        }
+        &.fa-caret-right {
+          right: -25px;
+        }
+      }
+      img {
+        .size(44px, 43px);
+        margin: 0 1px;
+      }
+    }
+  }
+  .info {
+    max-width: 800px;
+    .title {
+      color: #0089bc;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .map-location {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .location {
+      color: #333333;
+      font-weight: 700;
+      margin-bottom: 5px;
+      margin-right: 10px;
+    }
+    .map {
+      color: #333333;
+      font-size: 12px;
+      font-weight: 300;
+      margin-bottom: 10px;
+      display: block;
+      &:before {
+        content: '';
+        position: relative;
+        top: 2px;
+        margin-right: 6px;
+        .size(24px, 20px);
+        display: inline-block;
+        background: url("../img/search/map-icon.png");
+      }
+    }
+    .description {
+      color: #666666;
+      font-size: 14px;
+    }
+    hr {
+      margin: 15px 0 10px;
+    }
+    .details {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .detail-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      img {
+        margin-right: 3px;
+      }
+      p {
+        color: #333333;
+        font-size: 10px;
+        font-weight: 300;
+      }
+    }
+  }
+  .vertical-hr {
+    width: 1px;
+    height: 164px;
+    background-color: #c1c1c1;
+  }
+  .vertical-line {
+    border: 1px dashed #c1c1c1;
+    width: 1px;
+    height: 283px;
+    margin: 0 20px;
+  }
+  .tariff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .conditions {
+      display: flex;
+      justify-content: space-around;
+      div {
+        margin-right: 4px;
+      }
+    }
+    hr {
+      width: 90%;
+      background-color: #dbdbdb;
+      margin: 13px 0 8px;
+    }
+    .price-old {
+      color: #333333;
+      font-size: 18px;
+      text-decoration: line-through;
+    }
+
+    .price {
+      color: #333333;
+      font-size: 18px;
+      line-height: 32px;
+      text-align: center;
+      span {
+        font-size: 34px;
+        font-weight: 700;
+        display: block;
+      }
+    }
+    .button {
+      width: 240px;
+      padding: 12px 0;
+      .box-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+      .border-radius(5px);
+      .background-image(linear-gradient(to top, #009fdb 0%, #00a8e7 100%));
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 8px auto 16px;
+    }
+    .order-detail {
+      color: #333333;
+      font-size: 12px;
+      padding-left: 40px;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        background: url("../img/search/hotel-order-detail.png");
+        .size(22px, 16px);
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .hotel-item {
+    padding: 25px 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .hotel-slider {
+      margin: 0;
+    }
+    .info {
+      max-width: 500px;
+    }
+    .vertical-line {
+      display: none;
+    }
+    .vertical-hr {
+      display: none;
+    }
+    .tariff {
+      margin-top: 25px;
+      .order-detail {
+        &:before {
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 991px) {
+  .hotel-item {
+    .info {
+      max-width: 500px;
+      margin-top: 25px;
+      text-align: center;
+      .map-location{
+        justify-content: center;
+      }
+    }
+    .vertical-line {
+      display: none;
+    }
+    .vertical-hr {
+      display: none;
+    }
+    .tariff {
+      margin-top: 25px;
+      .order-detail {
+        &:before {
+          top: 0;
+        }
+      }
+    }
+  }
+}

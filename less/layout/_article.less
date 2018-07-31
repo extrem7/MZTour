@@ -1,0 +1,91 @@
+.article {
+  img {
+    max-width: 100%;
+  }
+  .padding {
+    padding: 0 20px 20px;
+  }
+  .title {
+    padding: 25px 0 10px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .date {
+    display: block;
+    padding-bottom: 15px;
+    color: #999999;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .content {
+    color: #666666;
+    font-family: "Myriad Pro", 'Ubuntu', sans-serif;
+    font-size: 14px;
+    b {
+      font-weight: 500;
+      color: #333333;
+    }
+    .subtitle {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  .more {
+    margin-top: 20px;
+    .border-radius(5px);
+    .background-image(linear-gradient(to top, #0065a7 0%, #0072bc 100%));
+    padding: 6px 15px;
+    min-width: 167px;
+    color: #ffffff;
+    font-size: 15px;
+  }
+}
+
+.post-type-archive-stock, .post-type-archive-bulgaria {
+  .article {
+    border: 1px solid #eaeaea;
+    margin-bottom: 35px;
+  }
+  .footer {
+    margin-top: 90px;
+  }
+}
+
+.single-bulgaria, .single-stock {
+  .article {
+    min-height: 100%;
+    padding-bottom: 40px;
+    .control {
+      width: 100%;
+      padding: 0 20px;
+      position: absolute;
+      bottom: 20px;
+    }
+    .button {
+      .border-radius(11px);
+      .background-image(linear-gradient(to top, #0065a7 0%, #0072bc 100%));
+      color: white;
+      font-size: 14px;
+      min-width: 175px;
+      padding: 3px 10px;
+      .fa {
+        margin: 0 6px;
+      }
+    }
+  }
+  .footer {
+    margin-top: 120px;
+  }
+  @media all and (max-width: 768px) {
+    .article {
+      .control {
+        position: unset;
+        .button {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

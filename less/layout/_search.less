@@ -1,0 +1,402 @@
+.date-slider {
+  margin: 35px auto;
+  padding: 0 0 0 30px;
+  display: flex;
+  align-items: center;
+  .left {
+    min-width: 250px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    img {
+      margin-right: 15px;
+    }
+    b {
+      color: #333333;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #999999;
+      font-weight: 300;
+    }
+  }
+  .dates {
+    overflow: hidden;
+    position: relative;
+    padding: 0 80px 0 60px;
+  }
+  .date-item {
+    .size(150px, 60px);
+    .background-image(linear-gradient(to top, #ebebeb 0%, #f9f9f9 100%));
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    cursor: pointer;
+    &.active {
+      pointer-events: all;
+      border-bottom: 2px solid @cyan;
+    }
+    .price {
+      color: @blue;
+      font-weight: 700;
+    }
+    .empty {
+      color: #999999;
+    }
+    .date {
+      color: #666666;
+      margin-top: 4px;
+    }
+  }
+  .arrow {
+    .size(48px);
+    display: block;
+    background: url("../img/main-tabs-arrow.png");
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 2;
+    &.arrow-right {
+      .rotate(180deg);
+      left: unset;
+      right: 10px;
+    }
+    &.slick-disabled {
+      pointer-events: none;
+      filter: grayscale(1);
+    }
+    &:hover {
+      background-image: url("../img/main-tabs-arrow-active.png");
+    }
+  }
+}
+
+.flight-direction {
+  color: #00a5e3;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 23px -15px;
+}
+
+.sorting {
+  color: #999999;
+  font-size: 14px;
+  position: relative;
+  b {
+    color: #333333;
+    font-weight: 500;
+  }
+  label {
+    margin-bottom: 0;
+  }
+  select {
+    min-width: 270px;
+    margin-left: 5px;
+    padding: 0 40px 0 10px;
+    height: 30px;
+    color: #333333;
+    font-weight: 500;
+    -moz-appearance: window;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+  .select {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      .size(18px, 9px);
+      background: url("../img/select-after.png");
+      right: 6px;
+      bottom: 10px;
+      pointer-events: none;
+    }
+  }
+}
+
+.subscribe-avia {
+  .form {
+    width: 800px;
+    .border-radius(5px);
+    background-color: #bcedff;
+    padding: 25px 25px 10px;
+    img {
+      margin-right: 20px;
+    }
+    .title {
+      color: #333333;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-right: 20px;
+    }
+    input[type=email] {
+      .size(296px, 42px);
+      .border-radius(5px 0 0 5px);
+      background-color: #ffffff;
+      padding-left: 15px;
+      color: #808080;
+      font-size: 14px;
+    }
+    .submit {
+      .size(219px, 42px);
+      .border-radius(0 5px 5px 0);
+      .background-image(linear-gradient(to top, #009fdb 0%, #00a8e7 100%));
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      cursor: pointer;
+    }
+    .details {
+      margin-top: 5px;
+      text-align: center;
+      color: #999999;
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+  .right {
+    margin: 0 auto;
+    width: 220px;
+    color: #999999;
+    font-size: 14px;
+    b {
+      display: block;
+      color: #333333;
+      font-weight: 500;
+    }
+  }
+}
+
+.hotel-car-offer {
+  text-align: center;
+  .col-lg-6:first-child {
+    padding: 0 30px 0 15px;
+  }
+  .offer-item {
+    width: 100%;
+    .border-radius(5px);
+    background-color: #f9f9f9;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 15px 0 0;
+    .info {
+      margin: 0 auto;
+
+    }
+  }
+  .car-offer {
+    .button {
+      .background-image(linear-gradient(to top, #966d44 0%, #a67c52 100%));
+    }
+  }
+  .title {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    span {
+      color: #333333;
+    }
+  }
+  .price {
+    color: @blue;
+    font-size: 17px;
+    line-height: 10px;
+    margin-bottom: 3px;
+    span {
+      font-size: 30px;
+      font-weight: 500;
+    }
+  }
+  .price-old {
+    color: #808080;
+    text-decoration: line-through;
+    margin-bottom: 3px;
+  }
+  .button {
+    width: 186px;
+    padding: 7px 0;
+    .box-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+    .border-radius(5px);
+    .background-image(linear-gradient(to top, #008d45 0%, #00a651 100%));
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.result-pagination {
+  margin-top: 32px;
+  .left {
+    color: #999999;
+    font-size: 14px;
+    b {
+      color: #333333;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    color: #999999;
+    .circle {
+      margin: 0 2px;
+      .border-radius(50%);
+      .size(30px);
+      .flex-center();
+      border: 1px solid #c1c1c1;
+      background-color: #ffffff;
+      color: #999999;
+      font-size: 14px;
+      font-weight: 500;
+      &.current {
+        background-color: @cyan;
+        color: #ffffff;
+      }
+    }
+    .dots {
+      margin: 0 9px;
+      pointer-events: none;
+    }
+    .caret {
+      font-size: 28px;
+      color: @cyan;
+      margin-right: 9px;
+      &.disabled {
+        color: #c1c1c1;
+        pointer-events: none;
+      }
+      &.caret-right {
+        margin-right: 0;
+        margin-left: 9px;
+      }
+    }
+  }
+}
+
+hr {
+  height: 1px;
+  background-color: #c1c1c1;
+  margin: 35px 0;
+}
+
+@media all and (max-width: 1200px) {
+  .subscribe-avia {
+    .right {
+      margin-top: 15px;
+      width: unset;
+      text-align: center;
+    }
+  }
+
+  .hotel-car-offer {
+    .col-lg-6:first-child {
+      padding: 0 10px 0 0;
+    }
+    .offer-item {
+      padding: 15px 0;
+      img {
+        width: 250px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .date-slider {
+    padding: 0;
+    display: block;
+    text-align: center;
+    .left {
+      margin: 0 auto 15px;
+    }
+    .dates {
+      padding: 0 60px;
+    }
+  }
+
+  .sorting {
+    text-align: center;
+    .left {
+      margin-bottom: 15px;
+    }
+  }
+
+  .subscribe-avia {
+    .form {
+      input[type=email] {
+        width: 220px;
+      }
+      .submit {
+        width: 220px;
+      }
+    }
+  }
+
+  .hotel-car-offer {
+    .col-lg-6:first-child {
+      padding: 0 15px;
+    }
+    .offer-item {
+      padding: 0;
+      margin-bottom: 15px;
+      img {
+        width: unset;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .date-slider {
+    .date-item {
+      width: unset;
+    }
+  }
+
+  .subscribe-avia {
+    .form {
+      .input {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 576px) {
+  .flight-direction{
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .subscribe-avia {
+    .form {
+      .input {
+        flex-direction: column;
+        input {
+          .border-radius(5px 5px 0 0);
+        }
+        .submit {
+          .border-radius(0 0 5px 5px);
+        }
+      }
+    }
+  }
+
+  .hotel-car-offer {
+    .offer-item {
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}

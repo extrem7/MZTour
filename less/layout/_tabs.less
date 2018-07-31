@@ -1,0 +1,475 @@
+.main-tabs {
+  @colors: #00a6e4, #f4921d, #00a04e, #7a2532, #f6b400, #a27950, #01469a;
+  @names: avia, tour, hotel, visa, transfer, car, security;
+  @photos: '../img/main-tab-avia.png', '../img/main-tab-tour.png', '../img/main-tab-hotel.png',
+  '../img/main-tab-visa.png', '../img/main-tab-transfer.png', '../img/main-tab-car.png',
+  '../img/main-tab-security.png';
+  @length: length(@colors);
+
+  .main-tabs(@names; @colors;@photos; @index) when (iscolor(extract(@colors, @index))) and (@index > 0) {
+    .main-tabs(@names; @colors; @photos; (@index - 1)); // decrement.
+
+    @name: extract(@names, @index);
+    @color: extract(@colors, @index);
+    @photo: extract(@photos, @index);
+    @darken: darken(@color, 7%);
+    &.@{name} {
+      .nav-tabs .nav-item a.active {
+        background-color: @color;
+        border-color: @color;
+      }
+      .tab-content {
+        background-color: @color;
+        border-color: @color;
+        .input-block {
+          input, select {
+            border-color: @darken !important;
+          }
+        }
+        .number-block {
+          input {
+            color: darken(@color, 20%);
+          }
+        }
+        .radio-block {
+          .checkmark:after {
+            background-color: @darken;
+          }
+        }
+        .param-list {
+          .list {
+            border-color: @darken;
+          }
+        }
+        .price-range {
+          .price-block {
+            border-color: @darken;
+          }
+        }
+      }
+      .param-list {
+        .list-overflow {
+          &::-webkit-scrollbar-thumb {
+            background-color: @color;
+            border-color: @color;
+          }
+        }
+      }
+    }
+    &.use-background.@{name} {
+      background-image: url("@{photo}");
+    }
+
+  }
+
+  .main-tabs(@names; @colors; @photos; @length);
+
+  .container {
+    z-index: 2;
+    position: relative;
+    padding: 0;
+  }
+  &:not(.use-background) {
+    margin-top: 40px;
+  }
+  .forms {
+    width: 100%;
+  }
+  .nav-tabs {
+    border-bottom: none;
+    .nav-item {
+      margin-right: 2px;
+      a {
+        .size(150px, 46px);
+        color: #666666;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: fade(#f9f9f9, 85%);
+        border: none;
+        transition: background .2s, color .2s, border .2s;
+        .active {
+          display: none;
+        }
+        &.active {
+          // background-color: @blue;
+          border: 1px solid;
+          border-bottom: 0;
+          color: white;
+          height: 49px;
+          .original {
+            display: none;
+          }
+          .active {
+            display: block;
+          }
+        }
+      }
+      img {
+        margin-right: 7px;
+      }
+    }
+  }
+  .tab-content {
+    padding: 15px;
+    border: 1px solid;
+    margin-top: 0;
+    min-height: 170px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .extended {
+      display: none;
+    }
+    #avia {
+      input, select {
+        color: #666666;
+      }
+      .top-inputs {
+        margin-bottom: 15px;
+      }
+      .radio-block, .checkbox-block {
+        margin-right: 15px;
+      }
+      .refresh {
+        margin-bottom: 10px;
+      }
+      .select-block {
+        select {
+          width: 190px;
+        }
+      }
+      .date-block, .number-block {
+        margin-left: 10px;
+      }
+      .number-block {
+        margin-right: 10px;
+      }
+    }
+    #tour {
+      .select-block {
+        select {
+          width: 165px;
+        }
+      }
+      .date-block {
+        input {
+          width: 130px;
+        }
+      }
+      .input-block {
+        margin-right: 10px;
+      }
+    }
+    #hotel {
+      .select-block {
+        select {
+          width: 155px;
+        }
+      }
+      .date-block {
+        input {
+          width: 140px;
+        }
+      }
+      .input-block {
+        margin-right: 10px;
+      }
+      .checkbox-block {
+        margin-right: 25px;
+      }
+    }
+    #visa {
+      .top-row {
+        margin-bottom: 10px;
+      }
+      .input-block {
+        margin-right: 10px;
+      }
+      .select-block {
+        select {
+          width: 200px;
+        }
+      }
+      .date-block {
+        input {
+          width: 150px;
+        }
+      }
+      .number-block {
+        input {
+          width: 90px;
+          .border-radius(5px);
+          border: 1px solid #0089bc;
+        }
+        .adult:after, .child:after {
+          right: 15px;
+        }
+        .little-child:after {
+          right: 30px;
+        }
+      }
+    }
+    #transfer {
+      label, .input-block {
+        color: #000000;
+      }
+      .top-row {
+        margin-bottom: 10px;
+      }
+      .input-block {
+        margin-right: 10px;
+      }
+      .select-block {
+        select {
+          width: 200px;
+        }
+      }
+      .date-block {
+        input {
+          width: 160px;
+        }
+      }
+      .number-block {
+        input {
+          width: 90px;
+          .border-radius(5px);
+          border: 1px solid #0089bc;
+        }
+        .adult:after, .child:after {
+          right: 15px;
+        }
+        .little-child:after {
+          right: 30px;
+        }
+      }
+      .radio-block {
+        margin-top: 10px;
+        margin-bottom: 8px;
+        margin-right: 10px;
+      }
+    }
+    #car {
+      .top-row {
+        margin-bottom: 10px;
+      }
+      .input-block {
+        margin-right: 12px;
+      }
+      .select-block {
+        select {
+          width: 207px;
+        }
+      }
+      .date-block {
+        margin-right: 2px;
+        input {
+          width: 120px;
+        }
+      }
+      .select-small {
+        select {
+          width: 100px;
+        }
+      }
+    }
+    #security {
+      input[type=number] {
+        .size(100px, 42px);
+        padding-left: 15px;
+      }
+      .top-row {
+        margin-bottom: 10px;
+      }
+      .input-block {
+        margin-right: 12px;
+      }
+      .select-block {
+        select {
+          width: 207px;
+        }
+      }
+      .date-block {
+        input {
+          width: 150px;
+        }
+      }
+      .select-big {
+        select {
+          width: 300px;
+        }
+      }
+    }
+  }
+  .forms-extended {
+    .submit {
+      min-width: 210px;
+      margin-right: 0;
+    }
+    #tour {
+      .tour-type {
+        select {
+          width: 225px;
+        }
+      }
+      .extended {
+        .human-count {
+          input {
+            .border-radius(5px);
+          }
+          .adult {
+            &:after {
+              top: 23px;
+            }
+            margin-right: 10px;
+          }
+          .child {
+            &:after {
+              top: 26px;
+            }
+          }
+        }
+        .childrens-age {
+          margin: 0 40px 0 15px;
+          input {
+            width: 50px;
+            padding: 0 2px 0 8px;
+            margin-right: 5px;
+            color: #a35c08;
+          }
+        }
+        .tour-type-list {
+          .list {
+            width: 190px;
+          }
+        }
+        .right {
+          .checkbox-block {
+            margin: 15px 0;
+          }
+          .additional-search {
+            margin: 15px auto;
+            display: table;
+          }
+        }
+        .submit {
+          width: 100%;
+          height: 78px;
+        }
+      }
+    }
+    #hotel {
+      .tour-type {
+        select {
+          width: 203px;
+        }
+      }
+      .extended {
+        .human-count {
+          input {
+            .border-radius(5px);
+          }
+          .adult {
+            &:after {
+              top: 23px;
+            }
+            margin-right: 10px;
+          }
+          .child {
+            &:after {
+              top: 26px;
+            }
+          }
+        }
+        .childrens-age {
+          margin: 0 40px 0 15px;
+          input {
+            width: 50px;
+            padding: 0 2px 0 8px;
+            margin-right: 5px;
+            color: #a35c08;
+          }
+        }
+        .tour-type-list {
+          .list {
+            width: 190px;
+          }
+        }
+        .right {
+          .select-block {
+            margin-bottom: 15px;
+            width: 100%;
+            select {
+              width: 100%;
+            }
+          }
+          .checkbox-block {
+            margin: 15px 0;
+          }
+          .additional-search {
+            margin: 15px auto;
+            display: table;
+          }
+          .submit{
+            margin-top: 15px;
+          }
+        }
+        .submit {
+          width: 100%;
+          height: 78px;
+        }
+      }
+    }
+  }
+  .extended-tab {
+    .plain {
+      display: none;
+    }
+    .extended {
+      display: block;
+    }
+  }
+
+}
+
+@media all and (max-width: 1200px) {
+  .main-tabs {
+    .forms {
+      position: unset;
+      margin-top: 25px;
+    }
+    .nav-tabs {
+      .nav-item {
+        a {
+          padding: 0;
+          width: 135px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .main-tabs {
+    .nav-tabs {
+      justify-content: center;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .main-tabs {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .home {
+    .main-tabs {
+      .container {
+        padding: 0 15px;
+      }
+    }
+  }
+}

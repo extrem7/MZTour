@@ -1,0 +1,210 @@
+.booking-insurance {
+  .about-booking {
+    margin-bottom: 25px;
+    .tab-header {
+      .background-image(linear-gradient(to top, #023d85 0%, #004aa5 100%));
+    }
+    .tab-content {
+      display: block;
+      font-weight: 400;
+    }
+    .title {
+      color: #333333;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 10px 0 25px;
+    }
+    .text {
+      color: #333333;
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 12px;
+    }
+    .row-inputs {
+      flex-wrap: wrap;
+    }
+    input, select {
+      border: 1px solid #aeaeae;
+    }
+    label {
+      color: #333333;
+      margin: 0 15px 10px 0;
+    }
+    .select-block {
+      select {
+        width: 205px;
+      }
+    }
+    .date-block {
+      input {
+        width: 150px;
+      }
+    }
+    .select-big {
+      select {
+        width: 305px;
+      }
+    }
+    .age-block {
+      margin-right: 5px;
+      input {
+        width: 100px;
+      }
+    }
+    .option-title {
+      margin: 15px 0 5px;
+    }
+    .option {
+      margin-bottom: 15px;
+      .option-inputs {
+        display: flex;
+        align-items: center;
+        label {
+          margin: 0 8px 0 0;
+        }
+        .checkbox-block {
+          .checkmark {
+            top: 6px;
+            &:after {
+              top: -7px;
+            }
+          }
+        }
+        .select-block {
+          &:after {
+            bottom: 8px;
+          }
+        }
+        select {
+          .size(130px, 28px);
+        }
+        i {
+          color: #ff0000;
+          font-size: 14px;
+        }
+      }
+      .option-price {
+        font-size: 14px;
+        padding-left: 20px;
+        font-weight: 300;
+        line-height: 18px;
+        span {
+          display: block;
+          color: #00a6e5;
+        }
+      }
+    }
+  }
+  .booking-control {
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: 35px;
+    .left {
+      position: absolute;
+      left: 0;
+    }
+    .price-big {
+      margin-left: 35px;
+    }
+  }
+  .booking-form {
+    .box-shadow(0 0 6px #d6d6d6);
+    margin-bottom: 25px;
+    .tab-header {
+      height: auto;
+      padding: 10px 0 10px 15px;
+      .background-image(linear-gradient(to top, #023d85 0%, #004aa5 100%));
+    }
+    .guest {
+      padding: 40px 20px;
+      .left {
+        padding-top: 10px;
+        margin-right: 20px;
+      }
+      input {
+        width: 220px;
+      }
+    }
+  }
+  .booking-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0;
+    label {
+      margin-right: 60px;
+      color: #333333;
+      font-size: 17px;
+      a {
+        color: #00aeef;
+        text-decoration: underline;
+      }
+    }
+    .button {
+      width: 220px;
+      .box-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+      .border-radius(5px);
+      .background-image(linear-gradient(to top, #009fdb 0%, #00a8e7 100%));
+      border: none;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 12px 0;
+      margin-right: 12px;
+      &:hover {
+        .box-shadow(0 2px 15px rgba(0, 0, 0, 0.5));
+      }
+      &:last-child {
+        .background-image(linear-gradient(to top, #f68e56 0%, #fbaf5d 100%));
+      }
+      img {
+        margin-right: 6px;
+      }
+    }
+  }
+  hr {
+    //border-color: #c1c1c1;
+    margin: 35px 0;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .booking-insurance {
+    .about-booking {
+      .input-block:not(.address):not(.comment) {
+        input[type=text] {
+          width: 160px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .booking-insurance {
+    .about-booking {
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .booking-insurance {
+    .about-booking {
+    }
+  }
+}
+
+@media all and (max-width: 576px) {
+  .booking-insurance {
+    .booking-control {
+      .left{
+        position: unset;
+      }
+      .promo {
+        margin-bottom: 15px;
+        display: block;
+      }
+    }
+  }
+}

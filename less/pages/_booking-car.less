@@ -1,0 +1,428 @@
+.booking-car {
+  .about-booking {
+    .tab-header {
+      padding: 10px 30px;
+      span {
+        font-weight: 500;
+      }
+      img {
+        margin-right: 5px;
+      }
+    }
+    .tab-content {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 13px 20px;
+      font-weight: 400;
+    }
+    .left {
+      .title {
+        color: #0089bc;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      .details {
+        display: flex;
+        .detail {
+          display: flex;
+          align-items: center;
+          margin-right: 20px;
+          p {
+            color: #333333;
+            font-size: 12px;
+            font-weight: 300;
+            margin-left: 4px;
+          }
+        }
+      }
+    }
+    .includes {
+      .title {
+        color: #333333;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+      ul {
+        color: #333333;
+        font-size: 14px;
+        li {
+          position: relative;
+          &:before {
+            content: '\f058';
+            color: #0089bc;
+            display: inline-block;
+            margin-right: 4px;
+            font-family: "FontAwesome";
+          }
+        }
+      }
+    }
+    .vertical-line {
+      border: 1px dashed #c1c1c1;
+      width: 1px;
+      //   height: ~"calc(100% - 60px)";
+      min-height: ~"calc(100% - 60px)";
+      margin: -10px 0 -20px;
+    }
+    .right {
+      text-align: center;
+      .title {
+        color: #333333;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      .duration {
+        color: #333333;
+        font-size: 24px;
+        margin-bottom: 12px;
+        span {
+          font-weight: 700;
+        }
+      }
+      .detail {
+        width: 350px;
+        p {
+          color: #333333;
+          font-size: 12px;
+          margin-bottom: 20px;
+          text-align: left;
+          span {
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+          }
+        }
+        img {
+          margin-right: 7px;
+        }
+      }
+      .button {
+        .box-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+        .border-radius(5px);
+        .background-image(linear-gradient(to top, #966d44 0%, #a67c52 100%));
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 5px 15px;
+      }
+    }
+  }
+  .car-slider {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    .main-photo {
+      .size(243px, 184px);
+      min-width: 243px;
+      .border-radius(10px);
+      border: 1px solid #c1c1c1;
+      background-color: #ffffff;
+      margin-right: 3px;
+      .flex-center();
+      pointer-events: none;
+      img {
+        max-width: 100%;
+      }
+    }
+    .car-photos-row {
+      img {
+        border: 1px solid #c1c1c1;
+        .size(77px, 59px);
+        .border-radius(5px);
+        margin-bottom: 4px;
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .booking-form {
+    .box-shadow(0 0 6px #d6d6d6);
+    .tab-header {
+      height: 50px;
+      background: #f9f9f9;
+      color: #333333;
+      padding: 10px 15px 8px;
+    }
+    .tab-content {
+      background-color: white;
+      font-weight: 400;
+      color: #333333;
+      .box-shadow(none);
+      padding: 25px 15px;
+    }
+    .input-block, .checkbox-block {
+      color: #333333;
+      font-weight: 400;
+    }
+    .date-block {
+      &:after {
+        right: 14px;
+      }
+    }
+    input, select {
+      .size(278px, 42px);
+      .border-radius(5px);
+      border: 1px solid #c1c1c1;
+      color: #333333;
+      font-size: 14px;
+      font-weight: 400;
+      padding-left: 13px;
+      margin-bottom: 10px;
+      &::-webkit-input-placeholder {
+        color: #999999;
+      }
+      &:-moz-placeholder {
+        color: #999999;
+      }
+      &::-moz-placeholder {
+        color: #999999;
+      }
+      &:-ms-input-placeholder {
+        color: #999999;
+      }
+    }
+    input[type=date] {
+      &::-webkit-inner-spin-button,
+        // &::-webkit-calendar-picker-indicator,
+      &::-webkit-clear-button {
+        display: none;
+        -webkit-appearance: none;
+      }
+    }
+    textarea {
+      .size(567px, 62px);
+      .border-radius(5px);
+      border: 1px solid #c1c1c1;
+      background-color: #ffffff;
+      color: #333333;
+      font-size: 14px;
+      display: block;
+      padding: 12px;
+      line-height: 18px;
+    }
+    .data {
+      color: #666666;
+      font-size: 12px;
+      line-height: 16px;
+    }
+    .control {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      .checkbox-block {
+        color: #333333;
+        font-size: 12px;
+        font-weight: 300;
+        width: 240px;
+        .checkmark {
+          &:after {
+            top: -7px;
+          }
+        }
+        .text {
+          line-height: 14px;
+          margin-bottom: 10px;
+        }
+        a {
+          color: #00a4e2;
+          text-decoration: underline;
+        }
+      }
+      .button {
+        min-width: 270px;
+        padding: 7px 0;
+        .box-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+        .border-radius(5px);
+        .background-image(linear-gradient(to top, #009fdb 0%, #00a8e7 100%));
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+    .input-block {
+      font-size: 14px;
+    }
+    .born-block {
+      input {
+        width: 88px;
+      }
+    }
+    .fields {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
+  }
+  .booking-control {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    .promo {
+      color: #00aeef;
+      font-size: 17px;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+      color: #333333;
+      font-size: 17px;
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      .checkbox-block {
+        color: #333333;
+        font-size: 17px;
+        .checkmark {
+          top: 6px;
+        }
+      }
+      .price {
+        width: 170px;
+        font-size: 18px;
+      }
+      .price-big {
+        span {
+          font-size: 31px;
+          line-height: 31px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .booking-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0;
+    label {
+      margin-right: 60px;
+      color: #333333;
+      font-size: 17px;
+      a {
+        color: #00aeef;
+        text-decoration: underline;
+      }
+    }
+    .button {
+      width: 220px;
+      .box-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+      .border-radius(5px);
+      .background-image(linear-gradient(to top, #009fdb 0%, #00a8e7 100%));
+      border: none;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 12px 0;
+      margin-right: 12px;
+      &:hover {
+        .box-shadow(0 2px 15px rgba(0, 0, 0, 0.5));
+      }
+      &:last-child {
+        .background-image(linear-gradient(to top, #f68e56 0%, #fbaf5d 100%));
+      }
+      img {
+        margin-right: 6px;
+      }
+    }
+  }
+  .footer {
+    margin-top: 70px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .booking-car {
+    .about-booking {
+      .left {
+        margin-right: 15px;
+      }
+    }
+    .booking-form {
+      input, select {
+        width: 205px;
+      }
+      .born-block {
+        input {
+          width: 60px;
+        }
+      }
+      textarea {
+        width: 400px;
+      }
+
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .booking-page {
+    .about-booking {
+      .tab-content {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .vertical-line {
+          display: none;
+        }
+      }
+    }
+    .booking-form {
+      .fields {
+        justify-content: space-around;
+      }
+      .control {
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .booking-page {
+    .about-booking {
+      .includes {
+        margin: 25px 0;
+      }
+    }
+    .booking-buttons {
+      flex-wrap: wrap;
+      a {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 576px) {
+  .booking-page {
+    .booking-form {
+      textarea {
+        width: 320px;
+      }
+      .data {
+        margin-top: 15px;
+      }
+    }
+    .booking-control {
+      flex-wrap: wrap;
+      justify-content: center;
+      .promo {
+        margin-bottom: 20px;
+      }
+    }
+    .booking-buttons{
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}

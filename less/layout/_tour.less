@@ -1,0 +1,161 @@
+.tour-item {
+  margin-bottom: 12px;
+  .border-radius(10px);
+  padding: 0 20px 0 8px;
+  border: 1px solid #c1c1c1;
+  .background-image(linear-gradient(to top, #ebebeb 0%, #f9f9f9 100%));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .info {
+    .title {
+      color: #0089bc;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .location {
+      color: #333333;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .map {
+      color: #333333;
+      font-size: 12px;
+      font-weight: 300;
+      margin-bottom: 10px;
+      display: block;
+      &:before {
+        content: '';
+        position: relative;
+        top: 2px;
+        margin-right: 6px;
+        .size(24px, 20px);
+        display: inline-block;
+        background: url("../img/search/map-icon.png");
+      }
+    }
+    .conditions {
+      display: flex;
+      div {
+        margin-right: 9px;
+      }
+    }
+  }
+  .vertical-hr {
+    width: 1px;
+    height: 164px;
+    background-color: #c1c1c1;
+  }
+  .details {
+    li {
+      color: #333333;
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      margin-bottom: 10px;
+      .left {
+        color: #666666;
+        font-weight: 400;
+        width: 130px;
+      }
+    }
+  }
+  .vertical-line {
+    border: 1px dashed #c1c1c1;
+    width: 1px;
+    height: 201px;
+  }
+  .tariff {
+    .price-title {
+      color: #666666;
+      font-weight: 700;
+    }
+    .price {
+      color: #333333;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 38px;
+      border-bottom: 1px solid #c1c1c1;
+      span {
+        font-size: 30px;
+        font-weight: 700
+      }
+    }
+    .price-person {
+      color: #666666;
+      font-size: 14px;
+      margin: 8px 0 15px;
+    }
+    .button {
+      width: 240px;
+      padding: 12px 0;
+      margin: 0 auto;
+      .box-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+      .border-radius(5px);
+      .background-image(linear-gradient(to top, #009fdb 0%, #00a8e7 100%));
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .tour-item {
+    .photo {
+      width: 120px;
+    }
+    .tariff {
+      .button {
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .tour-item {
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    .photo {
+      width: 200px;
+      margin-bottom: 15px;
+      @margin: ~"calc(50% - 100px)";
+      margin-left: @margin;
+      margin-right: @margin;
+    }
+    .info {
+      .title {
+        font-size: 21px;
+      }
+    }
+    .vertical-line {
+      border: none;
+      width: 1px;
+      height: 164px;
+      background-color: #c1c1c1;
+    }
+    .tariff {
+      span {
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .tour-item {
+    margin: 0 auto 15px;
+    padding: 15px;
+    max-width: 375px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .vertical-line, .vertical-hr {
+      display: none;
+    }
+    .tariff {
+      align-items: center;
+    }
+  }
+}

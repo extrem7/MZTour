@@ -1,0 +1,89 @@
+<div class="blue-tab payment">
+    <div class="tab-header"><img src="img/payment-icon.png" alt="">Введите данные об оплате</div>
+    <div class="tab-content">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#pay-bank">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    Банковская карта</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#pay-cash">
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                    наличный расчет</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#pay-non-cash">
+                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                    безналичный расчет</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="pay-bank" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row justify-content-around">
+                    <div class="col-xl-4 col-lg-5 col-md-7 col-sm-9">
+                        <div class="card">
+                            <label class="card-number input-block">
+                                Номер карты
+                                <input type="text" placeholder="1234-5678-9012-3456 789">
+                            </label>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p>Срок<br>действия</p>
+                                <label class="input-block time">
+                                    месяц
+                                    <input type="text" placeholder="12">
+                                </label>
+                                <label class="input-block time">
+                                    Год
+                                    <input type="text" placeholder="2012">
+                                </label>
+                            </div>
+                            <label class="name input-block">
+                                Фамилия и имя на карте
+                                <input type="text" placeholder="IVANOV IVAN">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-md-7 col-sm-9">
+                        <div class="card-cvv">
+                            <div class="line"></div>
+                            <div class="cvv d-flex justify-content-center align-items-end">
+                                <p>CVV — трехзначный код
+                                    на обратной стороне карты</p>
+                                <label class="input-block">
+                                    CVV
+                                    <input type="text" maxlength="3" placeholder="CVV">
+                                </label>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <img src="img/payment-service-1.png" alt="">
+                                <img src="img/payment-service-2.png" alt="">
+                                <img src="img/payment-service-3.png" alt="">
+                                <img src="img/payment-service-4.png" alt="">
+                            </div>
+                            <p class="additional">Принимается Visa, Visa Electron, MasterCard, Maestro</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-md-7 col-sm-9 ">
+                        <div class="card-info">
+                            <p class="title">ПОКУПКИ НА mztour.RU НАДЁЖНЫ И БЕЗОПАСНЫ</p>
+                            <p>Данные вашей банковской карты обрабатываются платежным центром PayU и защищены
+                                256-битным шифрованием, обеспеченным компанией Comodo. Сайт отвечает стандартам
+                                безопасности платёжных систем Visa и MasterCard (PCI complliance).</p>
+                            <div class="d-flex justify-content-around align-items-center">
+                                <img src="img/verified-by-visa.png" alt="">
+                                <img src="img/mastercard-securecode.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pay-cash" role="tabpanel" aria-labelledby="profile-tab">
+
+            </div>
+            <div class="tab-pane fade" id="pay-non-cash" role="tabpanel" aria-labelledby="contact-tab">
+
+            </div>
+        </div>
+    </div>
+</div>

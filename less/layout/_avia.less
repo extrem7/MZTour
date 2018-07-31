@@ -1,0 +1,186 @@
+.airplane-item {
+  margin-bottom: 12px;
+  .border-radius(10px);
+  border: 1px solid #c1c1c1;
+  .background-image(linear-gradient(to top, #ebebeb 0%, #f9f9f9 100%));
+  display: flex;
+  justify-content: space-around;
+  .companies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      max-width: 100px;
+      margin: 9px 0;
+    }
+  }
+  .company-info {
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .time {
+      color: #333333;
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 30px;
+    }
+    .city {
+      color: #666666;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 5px 0 3px;
+    }
+    .date {
+      color: #666666;
+      font-weight: 300;
+    }
+  }
+  .plane-time {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .plane-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .plane-up {
+        .size(37px, 13px);
+        background: url("../img/search/plane-up.png");
+      }
+      .plane-down {
+        .size(35px, 20px);
+        background: url("../img/search/plane-down.png");
+        margin-top: -7px;
+      }
+      .circle {
+        .border-radius(50%);
+        .size(20px);
+        border: 1px solid #c1c1c1;
+        background-color: #ffffff;
+        margin: 10px 0;
+      }
+      .city {
+        color: #666666;
+        font-size: 10px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+    hr {
+      margin: 0;
+      height: 0;
+      background-color: transparent;
+      border: 1px dashed #c1c1c1;
+      width: 320px;
+    }
+    .time {
+      color: #666666;
+      font-size: 14px;
+      font-weight: 300;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 25px;
+    }
+  }
+  .vertical-line {
+    border: 1px dashed #c1c1c1;
+    width: 1px;
+    height: 126px;
+  }
+  .tariff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .conditions {
+      display: flex;
+      align-items: center;
+      color: #666666;
+      font-size: 10px;
+      font-weight: 500;
+      img {
+        margin-left: 13px;
+      }
+    }
+    .button {
+      width: 220px;
+      margin: 4px 0 10px;
+      .box-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+      .border-radius(5px);
+      .background-image(linear-gradient(to top, #009fdb 0%, #00a8e7 100%));
+      color: #ffffff;
+      font-size: 17px;
+      span {
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    .count {
+      color: #666666;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .airplane-item {
+    .plane-time {
+      hr {
+        width: 160px;
+      }
+    }
+    .tariff {
+      .button {
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .airplane-item {
+    .plane-time {
+      hr {
+        width: 110px;
+      }
+    }
+    .tariff {
+      .button {
+        width: unset;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .airplane-item {
+    padding: 10px;
+    max-width: 375px;
+    margin: 0 auto 15px;
+    flex-direction: column;
+    align-items: center;
+    .companies {
+      flex-direction: row;
+    }
+    .plane-time {
+      margin: 15px 0;
+      .time {
+        top: 4px;
+      }
+    }
+    .vertical-line {
+      display: none;
+    }
+    .tariff {
+      margin-top: 15px;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.booking-pay {
+  .booking-control {
+    justify-content: flex-end;
+  }
+  .booking-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0;
+    label {
+      margin-right: 60px;
+      color: #333333;
+      font-size: 17px;
+      a {
+        color: #00aeef;
+        text-decoration: underline;
+      }
+    }
+    .button {
+      width: 220px;
+      .box-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+      .border-radius(5px);
+      .background-image(linear-gradient(to top, #009fdb 0%, #00a8e7 100%));
+      border: none;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 12px 0;
+      margin-right: 12px;
+      &:hover {
+        .box-shadow(0 2px 15px rgba(0, 0, 0, 0.5));
+      }
+      &:last-child {
+        .background-image(linear-gradient(to top, #f68e56 0%, #fbaf5d 100%));
+      }
+      img {
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+.table-tab {
+  .box-shadow(0 0 6px #d6d6d6);
+  margin-bottom: 35px;
+  .tab-header {
+    min-height: 50px;
+    background: #f9f9f9;
+    color: #333333;
+    padding: 10px 15px 8px 7px;
+  }
+  .tab-content {
+    background-color: white;
+    font-weight: 400;
+    color: #333333;
+    .box-shadow(none);
+    padding: 25px 30px;
+  }
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+  th {
+    color: #666666;
+    font-weight: 400;
+  }
+  td {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 14px 0;
+    border-bottom: 1px solid #ececec;
+  }
+  tr:last-child td {
+    border-bottom: none;
+  }
+  .edit {
+    text-transform: none;
+    font-weight: 400;
+    text-align: right;
+    margin-left: auto;
+    display: block;
+    i {
+      color: #00a651;
+    }
+  }
+}
+
+.tourists-tab {
+  th {
+    &:nth-child(2) {
+      padding-left: 70px;
+    }
+  }
+  td {
+    &:nth-child(3) {
+      min-width: 7%;
+      width: 7%;
+    }
+    img {
+      margin: 0 35px 0 25px;
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .table-tab {
+    .tab-content {
+      overflow-x: scroll;
+      table {
+        width: 910px;
+      }
+    }
+  }
+
+  .animals-tab {
+    .tab-content {
+      table {
+        width: 655px;
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+.main-tabs.avia {
+  background-image: url("../img/main-tab-avia.png");
+}
+.main-tabs.avia .nav-tabs .nav-item a.active {
+  background-color: #00a6e4;
+  border-color: #00a6e4;
+}
+.main-tabs.avia .tab-content {
+  background-color: #00a6e4;
+  border-color: #00a6e4;
+}
+.main-tabs.avia .tab-content .input-block input,
+.main-tabs.avia .tab-content .input-block select {
+  border-color: #008cc0 !important;
+}
+.main-tabs.avia .tab-content .number-block input {
+  color: #005c7e;
+}
+.main-tabs.avia .tab-content .radio-block .checkmark:after {
+  background-color: #008cc0;
+}
+.main-tabs.tour {
+  background-image: url("../img/main-tab-tour.png");
+}
+.main-tabs.tour .nav-tabs .nav-item a.active {
+  background-color: #f4921d;
+  border-color: #f4921d;
+}
+.main-tabs.tour .tab-content {
+  background-color: #f4921d;
+  border-color: #f4921d;
+}
+.main-tabs.tour .tab-content .input-block input,
+.main-tabs.tour .tab-content .input-block select {
+  border-color: #e2800b !important;
+}
+.main-tabs.tour .tab-content .number-block input {
+  color: #a35c08;
+}
+.main-tabs.tour .tab-content .radio-block .checkmark:after {
+  background-color: #e2800b;
+}
+.main-tabs.hotel {
+  background-image: url("../img/main-tab-hotel.png");
+}
+.main-tabs.hotel .nav-tabs .nav-item a.active {
+  background-color: #00a04e;
+  border-color: #00a04e;
+}
+.main-tabs.hotel .tab-content {
+  background-color: #00a04e;
+  border-color: #00a04e;
+}
+.main-tabs.hotel .tab-content .input-block input,
+.main-tabs.hotel .tab-content .input-block select {
+  border-color: #007c3d !important;
+}
+.main-tabs.hotel .tab-content .number-block input {
+  color: #003a1c;
+}
+.main-tabs.hotel .tab-content .radio-block .checkmark:after {
+  background-color: #007c3d;
+}
+.main-tabs.visa {
+  background-image: url("../img/main-tab-visa.png");
+}
+.main-tabs.visa .nav-tabs .nav-item a.active {
+  background-color: #7a2532;
+  border-color: #7a2532;
+}
+.main-tabs.visa .tab-content {
+  background-color: #7a2532;
+  border-color: #7a2532;
+}
+.main-tabs.visa .tab-content .input-block input,
+.main-tabs.visa .tab-content .input-block select {
+  border-color: #5f1d27 !important;
+}
+.main-tabs.visa .tab-content .number-block input {
+  color: #2c0d12;
+}
+.main-tabs.visa .tab-content .radio-block .checkmark:after {
+  background-color: #5f1d27;
+}
+.main-tabs.transfer {
+  background-image: url("../img/main-tab-transfer.png");
+}
+.main-tabs.transfer .nav-tabs .nav-item a.active {
+  background-color: #f6b400;
+  border-color: #f6b400;
+}
+.main-tabs.transfer .tab-content {
+  background-color: #f6b400;
+  border-color: #f6b400;
+}
+.main-tabs.transfer .tab-content .input-block input,
+.main-tabs.transfer .tab-content .input-block select {
+  border-color: #d29a00 !important;
+}
+.main-tabs.transfer .tab-content .number-block input {
+  color: #906900;
+}
+.main-tabs.transfer .tab-content .radio-block .checkmark:after {
+  background-color: #d29a00;
+}
+.main-tabs.car {
+  background-image: url("../img/main-tab-car.png");
+}
+.main-tabs.car .nav-tabs .nav-item a.active {
+  background-color: #a27950;
+  border-color: #a27950;
+}
+.main-tabs.car .tab-content {
+  background-color: #a27950;
+  border-color: #a27950;
+}
+.main-tabs.car .tab-content .input-block input,
+.main-tabs.car .tab-content .input-block select {
+  border-color: #8a6744 !important;
+}
+.main-tabs.car .tab-content .number-block input {
+  color: #5e462e;
+}
+.main-tabs.car .tab-content .radio-block .checkmark:after {
+  background-color: #8a6744;
+}
+.main-tabs.security {
+  background-image: url("../img/main-tab-security.png");
+}
+.main-tabs.security .nav-tabs .nav-item a.active {
+  background-color: #01469a;
+  border-color: #01469a;
+}
+.main-tabs.security .tab-content {
+  background-color: #01469a;
+  border-color: #01469a;
+}
+.main-tabs.security .tab-content .input-block input,
+.main-tabs.security .tab-content .input-block select {
+  border-color: #013677 !important;
+}
+.main-tabs.security .tab-content .number-block input {
+  color: #001835;
+}
+.main-tabs.security .tab-content .radio-block .checkmark:after {
+  background-color: #013677;
+}

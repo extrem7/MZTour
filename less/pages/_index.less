@@ -1,0 +1,476 @@
+.home {
+  .main-tabs {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: background .3s;
+    color: #ffffff;
+    // variables
+    .container {
+      z-index: 2;
+      position: relative;
+      min-height: 654px;
+      padding: 0;
+    }
+    .background-shadow {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      .background-image(linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.01) 100%));
+    }
+    .hotel-logo {
+      display: none;
+      padding: 16px 0 0;
+    }
+    &.hotel {
+      .title {
+        display: none;
+      }
+      .hotel-logo {
+        display: block;
+      }
+    }
+    .title {
+      padding-top: 110px;
+      font-size: 48px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    .subtitle {
+      padding-top: 15px;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    .forms {
+      position: absolute;
+      bottom: 80px;
+    }
+    .tabs-control {
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+      .indicators {
+        margin-right: 40px;
+        a {
+          .size(19px);
+          .border-radius(50%);
+          border: 1px solid @cyan;
+          background-color: #ffffff;
+          margin: 0 4px;
+          display: block;
+          transition: all .3s;
+          &.active {
+            border: 1px solid #ffffff;
+            background-color: @cyan;
+          }
+        }
+      }
+      .arrow {
+        .size(48px);
+        display: block;
+        background: url("../img/main-tabs-arrow.png");
+        &.arrow-right {
+          .rotate(180deg);
+          margin-left: 4px;
+        }
+        &:hover {
+          background-image: url("../img/main-tabs-arrow-active.png");
+        }
+      }
+    }
+  }
+  .stars-rate {
+    display: flex;
+    position: absolute;
+    .star {
+      .size(20px);
+      background: url("../img/star.png") no-repeat;
+      background-size: 100% 100%;
+      margin-right: 2px;
+      &.active {
+        background-image: url("../img/star-active.png");
+      }
+    }
+  }
+  .old-price {
+    text-decoration: line-through;
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .price {
+    color: @cyan;
+    font-size: 17px;
+    line-height: 17px;
+    span {
+      font-size: 30px;
+      font-weight: 500;
+    }
+  }
+  .hotels {
+    .hotel-item {
+      width: 20vw;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      display: block;
+      &:hover {
+        .scale(1.1);
+        z-index: 2;
+      }
+      .background {
+        .background-image(linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0.5) 47%, rgba(255, 255, 255, 0) 100%));
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        .size(100%);
+      }
+      .content {
+        position: relative;
+        z-index: 2;
+        height: 257px;
+        padding: 20px 0 20px 20px;
+        color: #333333;
+      }
+      .location {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+      .title {
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .stars-rate {
+        bottom: 20px;
+      }
+      .prices {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        padding-right: 20px;
+        text-align: right;
+        .size(216px, 59px);
+        background: url("../img/home/price.png");
+        padding-top: 4px;
+      }
+    }
+  }
+  .popular-tours {
+    padding-bottom: 55px;
+    #popular-tours {
+      position: relative;
+    }
+    .slick-track {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .special-offers {
+    .photos {
+      a {
+        position: relative;
+        background-size: cover;
+        display: block;
+        cursor: pointer;
+        transition: filter .3s;
+        &:hover {
+          -webkit-filter: saturate(1.5);
+        }
+      }
+      p {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 27px;
+        text-transform: uppercase;
+        position: absolute;
+        b {
+          font-size: 39px;
+          font-weight: 400;
+        }
+      }
+      .bulgaria {
+        width: 41%;
+        height: 400px;
+        p {
+          top: 30px;
+          right: 30px;
+          text-align: right;
+          color: #333333;
+        }
+      }
+      .vertical {
+        width: 17%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        a {
+          height: 49%;
+        }
+      }
+      .excursion {
+        p {
+          top: 24px;
+          right: 21px;
+        }
+      }
+      .city-hotels {
+        p {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 22.44px;
+          top: 18px;
+          left: 16px;
+        }
+      }
+      .winter {
+        width: 16%;
+        p {
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          bottom: 30px;
+          text-align: center;
+          b {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 27px;
+          }
+        }
+      }
+      .rest {
+        width: 25%;
+        p {
+          text-align: center;
+          top: 28px;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .last-news {
+    padding-bottom: 75px;
+    .section-title, .section-subtitle {
+      text-align: left;
+    }
+    .button {
+      .border-radius(18px);
+      background-color: @cyan;
+      padding: 4px 10px;
+      min-width: 68px;
+      color: #ffffff;
+      font-size: 12px;
+      &:hover {
+        background-color: darken(@cyan, 10%);
+      }
+    }
+    .news-item {
+      border-right: 1px solid #c7c7d8;
+      font-size: 14px;
+      color: #666666;
+      margin-bottom: 15px;
+      &:last-child {
+        border: none;
+      }
+      .title {
+        color: @blue;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        display: block;
+      }
+      .content {
+        font-weight: 300;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1700px) {
+  .home {
+    .hotels {
+      .hotel-item {
+        width: 25vw;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1360px) {
+  .home {
+    .hotels {
+      .hotel-item {
+        width: 33.333vw;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .home {
+    .main-tabs {
+      padding-bottom: 55px;
+      .forms{
+        position: unset;
+      }
+      .tabs-control {
+        bottom: -50px;
+      }
+    }
+    .last-news {
+      .news-item {
+        &:nth-child(4) {
+          border-right: none;
+        }
+        &:nth-child(5), &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .home {
+    .hotels {
+      .hotel-item {
+        width: 50vw;
+      }
+    }
+    .special-offers {
+      .photos {
+        .bulgaria {
+          width: 30%;
+          p {
+            top: 3px;
+            right: 6px;
+          }
+        }
+        .vertical {
+          width: 24%;
+        }
+        .winter {
+          width: 19%;
+        }
+
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .home {
+    .main-tabs {
+      text-align: center;
+      .title {
+        padding-top: 50px;
+        font-size: 30px;
+        br {
+          display: none;
+        }
+      }
+      .subtitle {
+        font-size: 24px;
+        line-height: 28px;
+        br {
+          display: none;
+        }
+      }
+    }
+    .hotels {
+      .hotel-item {
+        .prices {
+          bottom: 45px;
+        }
+      }
+    }
+    .special-offers {
+      .photos {
+        align-items: center;
+        a {
+          width: 320px !important;
+          height: 200px !important;
+          background-position: bottom right;
+        }
+        p {
+          font-size: 34px;
+          line-height: 38px;
+          font-weight: 500;
+          b {
+            font-size: 38px;
+          }
+        }
+        .vertical {
+          height: 400px !important;
+          width: 320px !important;
+          .excursion {
+            margin-bottom: 0;
+          }
+        }
+        .city-hotels {
+          p {
+            font-size: 34px;
+            line-height: 38px;
+          }
+        }
+        .winter {
+          p {
+            b {
+              font-size: 38px;
+            }
+          }
+        }
+      }
+    }
+    .last-news {
+      .section-title, .section-subtitle {
+        text-align: center;
+      }
+      .button {
+        margin-bottom: 25px;
+      }
+      .news-item {
+        &:nth-child(2) {
+          border-right: none;
+        }
+        &:nth-child(5), &:last-child {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 576px) {
+  .home {
+    .hotels {
+      .hotel-item {
+        width: 100vw;
+      }
+    }
+    #popular-tours {
+      .tour-card {
+        // max-width: 320px;
+      }
+    }
+    .last-news {
+      .news-item {
+        max-width: 320px;
+        margin: 0 auto 15px;
+        border-right: none;
+      }
+    }
+  }
+}

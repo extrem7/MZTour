@@ -1,0 +1,559 @@
+.booking-visa {
+  .about-booking {
+    margin-bottom: 25px;
+    .tab-header {
+      .background-image(linear-gradient(to top, #65202a 0%, #802734 100%));
+      padding-left: 12px;
+    }
+    .tab-content {
+      padding: 23px 13px 35px;
+      justify-content: space-between;
+      font-weight: 400;
+      color: #333333;
+    }
+    .title {
+      font-size: 30px;
+      font-weight: 500;
+      margin-left: 20px;
+    }
+    .text {
+      font-size: 14px;
+      line-height: 18px;
+      margin: 20px 0;
+    }
+    .button {
+      .box-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+      .border-radius(5px);
+      .background-image(linear-gradient(to top, #009fdb 0%, #00a8e7 100%));
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      min-width: 220px;
+      padding: 8px 0;
+    }
+    .map {
+      text-align: center;
+      margin-left: 55px;
+      p {
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+  .booking-control {
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: 35px;
+    .left {
+      position: absolute;
+      left: 0;
+    }
+    .price-big {
+      margin-left: 35px;
+    }
+  }
+  .booking-form {
+    margin-bottom: 25px;
+    .tab-header {
+      height: auto;
+      .background-image(linear-gradient(to top, #65202a 0%, #802734 100%));
+    }
+    .tab-content {
+      .box-shadow(none);
+    }
+    .main-client {
+      background-color: #ececec;
+    }
+    .client {
+      margin: 0 -30px 40px;
+      &.active {
+        .client-header {
+          background-color: #00aeef;
+          color: #ffffff;
+          .client-info {
+            color: #f1f1f1;
+          }
+          .fields {
+            label {
+              color: white;
+            }
+          }
+          .hide-fields {
+            background-color: #00aeef;
+            color: white;
+          }
+        }
+        .client-main {
+          //   display: block;
+        }
+      }
+      .client-header {
+        position: relative;
+        background-color: #ececec;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #333333;
+        padding: 20px 16px 20px 30px;
+        margin-bottom: 35px;
+      }
+      .client-info {
+        color: #111111;
+        font-size: 14px;
+        span {
+          display: block;
+          font-size: 18px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+      .visa-info {
+        font-size: 12px;
+        span {
+          font-weight: 700;
+        }
+      }
+      .fields {
+        display: flex;
+        align-items: flex-end;
+        label {
+          color: #666666;
+        }
+        input {
+          .size(218px, 39px);
+        }
+        .gender {
+          display: inline-flex;
+        }
+      }
+      .hide-fields {
+        position: absolute;
+        right: 0;
+        bottom: -28px;
+        background-color: #ececec;
+        width: 230px;
+        padding: 2px 0;
+        color: #00aeef;
+        font-size: 12px;
+        text-decoration: underline;
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        &:after {
+          content: '';
+          height: 33px;
+          .rotate(-28deg);
+          width: 13px;
+          background-color: white;
+          position: absolute;
+          left: -4px;
+          top: 2px;
+        }
+        i {
+          margin-right: 14px;
+          font-size: 18px;
+
+        }
+      }
+      .client-main {
+        display: none;
+        border: 1px solid #00aeef;
+        position: relative;
+        .box-shadow(none);
+        padding: 35px 30px;
+      }
+      .nav-tabs {
+        border: none;
+        position: absolute;
+        top: -32px;
+        left: -2px;
+        a {
+          background-color: #ececec;
+          color: #333333;
+          font-size: 14px;
+          padding: 3px 35px;
+          margin-right: 4px;
+          .border-radius(0);
+          &.active {
+            color: #ffffff;
+            background-color: #00aeef;
+          }
+        }
+      }
+      .client-left {
+        width: 460px;
+        .field {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 56px;
+          position: relative;
+          border-top: 1px solid #ececec;
+          input, select {
+            height: 38px;
+          }
+          &:hover .line {
+            opacity: 1;
+          }
+          &:last-child {
+            border-bottom: 1px solid #ececec;
+          }
+
+        }
+        .line {
+          position: absolute;
+          left: 102%;
+          top: 30px;
+          opacity: 0;
+          transition: opacity .2s;
+          &.line-bottom {
+            top: auto;
+            bottom: 30px;
+          }
+        }
+        input, select {
+          width: 220px;
+        }
+        .field-title {
+          color: #333333;
+          font-size: 14px;
+          line-height: 18px;
+          margin-bottom: 0;
+        }
+        .subtitle {
+          color: #666666;
+          font-size: 12px;
+          line-height: 14px;
+          font-style: italic;
+          font-weight: 300;
+        }
+        .checkbox-block {
+          .checkmark {
+            &:after {
+              top: -7px;
+            }
+          }
+        }
+      }
+      .client-right {
+        margin: 0 auto;
+      }
+      .client-container {
+        width: 485px;
+        margin: 0 auto;
+        font-size: 14px;
+        textarea {
+          .border-radius(5px);
+          border: 1px solid #c1c1c1;
+          height: 135px;
+          width: 100%;
+          margin: 5px 0;
+          padding: 5px;
+        }
+        b {
+          color: #333333;
+          line-height: 16px;
+        }
+        i {
+          line-height: 16px;
+          display: block;
+          color: #666666;
+        }
+        hr {
+          background-color: #ececec;
+          margin: 15px 0 25px;
+        }
+      }
+      .bottom {
+        margin-top: 25px;
+        font-size: 16px;
+        font-style: italic;
+      }
+      .additional-documents {
+        border: 1px solid #ececec;
+        padding: 12px 9px 0;
+        color: #333333;
+        .title {
+          font-size: 16px;
+          text-align: center;
+        }
+        .file-field {
+          width: 100%;
+          height: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 25px 0 0;
+          border-top: 1px solid #ececec;
+          .field-title {
+            font-size: 10px;
+            line-height: 16px;
+            span {
+              font-size: 14px;
+            }
+          }
+          label {
+            color: #999999;
+            font-size: 10px;
+            font-weight: 300;
+            margin: 0 20px 0 35px;
+          }
+          input {
+            display: block;
+            width: 300px;
+            .border-radius(2px 0 0 2px);
+            border: 1px solid #c1c1c1;
+            background-color: #ffffff;
+            color: #999999;
+            font-size: 12px;
+            height: 32px;
+          }
+        }
+        .require {
+          display: flex;
+          align-items: center;
+          i {
+            display: inline-block;
+            font-size: 20px;
+            color: #717171;
+            margin-right: 14px;
+          }
+          a {
+            color: #009bd5;
+            font-size: 12px;
+            text-decoration: underline;
+            line-height: 16px;
+            display: block;
+          }
+        }
+      }
+      .links {
+        margin-top: 30px;
+        a {
+          color: #009bd5;
+          font-size: 12px;
+          text-decoration: underline;
+          margin-right: 30px;
+          i {
+            font-size: 21px;
+            color: #868686;
+            margin-right: 12px;
+            position: relative;
+            top: 5px;
+          }
+        }
+      }
+      .client-control {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 460px;
+        position: absolute;
+        bottom: 35px;
+        left: 30px;
+        .steps {
+          color: #666666;
+          span {
+            color: #00aeef;
+            font-weight: 700;
+          }
+        }
+        .button {
+          min-width: 210px;
+          padding: 8px 0;
+          .box-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+          .border-radius(5px);
+          .background-image(linear-gradient(to top, #009fdb 0%, #00a8e7 100%));
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .booking-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0;
+    label {
+      margin-right: 60px;
+      color: #333333;
+      font-size: 17px;
+      a {
+        color: #00aeef;
+        text-decoration: underline;
+      }
+    }
+    .button {
+      width: 220px;
+      .box-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+      .border-radius(5px);
+      .background-image(linear-gradient(to top, #009fdb 0%, #00a8e7 100%));
+      border: none;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 12px 0;
+      margin-right: 12px;
+      &:hover {
+        .box-shadow(0 2px 15px rgba(0, 0, 0, 0.5));
+      }
+      &:last-child {
+        .background-image(linear-gradient(to top, #f68e56 0%, #fbaf5d 100%));
+      }
+      img {
+        margin-right: 6px;
+      }
+    }
+  }
+  hr {
+    //border-color: #c1c1c1;
+    margin: 35px 0;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .booking-visa {
+    .booking-form {
+      .client {
+        .client-header {
+          flex-wrap: wrap;
+        }
+        .line {
+          display: none;
+        }
+        .additional-documents {
+          .file-field {
+            flex-direction: column;
+            align-items: center;
+            height: unset;
+            padding: 5px 0;
+            input {
+              margin: 5px 0;
+              width: 100%;
+            }
+          }
+        }
+        .client-control{
+          width: 385px;
+          bottom: 15px;
+          .button{
+            min-width: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .booking-visa {
+    .about-booking {
+      .tab-content {
+        text-align: center;
+        justify-content: center;
+      }
+      .map {
+        margin-left: 0;
+        margin-top: 25px;
+      }
+    }
+    .booking-form {
+      .client {
+        .nav-tabs {
+          width: 500px;
+        }
+        .fields {
+          flex-wrap: wrap;
+        }
+        .client-control{
+          margin-top: 15px;
+          position: unset;
+          width: auto;
+          .button{
+            min-width: 210px;
+          }
+        }
+      }
+      .tab-pane {
+        .d-flex {
+          flex-wrap: wrap;
+          justify-content: center !important;
+        }
+      }
+      .client-right {
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .booking-visa {
+    .booking-form {
+      .client {
+        .client-header {
+          margin-bottom: 60px;
+        }
+        .nav-tabs {
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          top: -60px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 576px) {
+  .booking-visa {
+    .about-booking {
+      .map {
+        iframe {
+          width: 100%;
+        }
+      }
+    }
+    .booking-form {
+      .client {
+        text-align: center;
+        .client-header {
+          margin-bottom: 33px;
+        }
+        .nav-tabs {
+          position: unset;
+          margin-bottom: 15px;
+        }
+        .client-left {
+          .field {
+            height: unset;
+            flex-direction: column;
+            padding: 5px 0;
+            label {
+              margin-top: 5px;
+            }
+          }
+        }
+        .client-right {
+          .client-container {
+            width: 100%;
+          }
+          textarea {
+            width: 270px;
+          }
+        }
+        .client-control{
+          flex-direction: column;
+          .steps{
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
